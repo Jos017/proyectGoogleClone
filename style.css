@@ -10,72 +10,78 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
-.header {
-    /* height: 48px; */
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    height: 8vh;
-    font-size: 1.3rem;
-}
-.header__links {
-    display: flex;
-}
-.header__links li {
-    list-style: none;
-    padding: 0 1rem;
-}
-.header__links a {
+a {
     text-decoration: none;
+    cursor: pointer;
+}
+header {
+    width: 100vw;
+    height: 8vh;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+.navbar__right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    height: auto;
+    font-size: 1.3rem;
+    margin-right: 1rem;
+}
+.navbar__right-section li {
+    margin: 0 0.5rem;
+}
+.navbar__right-section a {
     color: black;
 }
-.header__google-apps {
+.navbar__google-apps {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin: 0 15px;
-    background-color: white;
 }
-.header__google-apps:hover {
+.navbar__google-apps:hover {
     background-color: #E8E8E8;
 }
-.header__google-apps a {
+.navbar__google-apps a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: inherit;
     height: inherit;
 }
-.header__google-apps img{
+.navbar__google-apps img{
     width: 24px;
     height: 24px;
 }
-.header__google-account {
+.navbar__google-account {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 20px;
     overflow: hidden;
     background-color: white;
 }
-.header__google-account a {
+.navbar__google-account a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: inherit;
     height: inherit;
 }
-.header__google-account img {
+.navbar__google-account img {
     height: 100%;
     object-fit: cover;
 }
-.main {
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +104,9 @@ body {
     align-items: center;
     border: 1px solid #C0C0C0;
     border-radius: 23px;
+}
+.main__search-bar:hover {
+    box-shadow: 0 1px 6px 0 #C0C0C0;
 }
 .main__search-logo {
     width: 20px;
@@ -134,16 +143,20 @@ body {
     border: none;
     border-radius: 8px;
     height: 4rem;
+    width: 172px;
     padding: 0 20px;
     margin: 0 15px;
     font-size: 1.4rem;
+    background-color: #f2f2f2;
+    color: #5f6368;
     cursor: pointer;
 }
 .main__button:hover {
-    background-color: #E8E8E8;
+    border: 1px solid #c6c6c6;
+    color: black;
 }
 
-.footer {
+footer {
     /* height: 48px; */
     display: flex;
     justify-content: space-between;
@@ -152,11 +165,10 @@ body {
     font-size: 1.3rem;
     background-color: #F0F0F0;
 }
-.footer a {
-    text-decoration: none;
+footer a {
     color: black;
 }
-.footer li {
+footer li {
     list-style: none;
     padding: 0 1rem;
 }
